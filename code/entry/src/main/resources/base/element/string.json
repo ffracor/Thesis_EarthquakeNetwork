@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "Earthquake Network"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_geolocator",
+      "value": "Geolocator"
+    },
+    {
+      "name": "entry_polling",
+      "value": "Polling"
+    },
+    {
+      "name": "entry_alarm",
+      "value": "Alarm"
+    }
+  ]
+}

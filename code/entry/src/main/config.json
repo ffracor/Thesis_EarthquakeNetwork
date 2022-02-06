@@ -1,0 +1,140 @@
+{
+  "app": {
+    "bundleName": "com.finazzi.earthquakenetwork",
+    "vendor": "finazzi",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig":
+  {
+    "default": {
+      "network": {
+        "cleartextTraffic": true,
+        "securityConfig": {
+          "domainSettings": {
+            "cleartextPermitted": true,
+            "domains": [
+              {
+                "subdomains": true,
+                "name": "https://www.earthquakenetwork.it/mysql/distquake_huawei_smartwatch.php"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "module": {
+    "package": "com.finazzi.earthquakenetwork",
+    "name": ".MyApplication",
+    "mainAbility": "com.finazzi.earthquakenetwork.MainAbility",
+    "deviceType": [
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false,
+      "metaData": {
+
+        "customizeData": [
+
+          {
+
+            "name": "hwc-theme",
+
+            "value": "androidhwext:style/Theme.Emui.Dark.NoActionBar"
+
+          }
+
+        ]
+
+      }
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.finazzi.earthquakenetwork.MainAbility",
+        "icon": "$media:en_icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.finazzi.earthquakenetwork.userinterface.EarthquakeInformation",
+        "icon": "$media:en_icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.finazzi.earthquakenetwork.pollingservice.EarthquakeResearch",
+        "visible": true,
+        "backgroundModes": ["dataTransfer", "location"],
+        "icon": "$media:en_icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "service",
+        "launchType": "standard"
+      }
+    ],
+
+    "reqPermissions":
+    [
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.LOCATION_IN_BACKGROUND"
+      },
+      {
+        "name": "ohos.permission.LOCATION"
+      },
+      {
+        "name": "ohos.permission.KEEP_BACKGROUND_RUNNING"
+      },
+      {
+        "name": "ohos.permission.VIBRATE"
+      }
+    ]
+  }
+}

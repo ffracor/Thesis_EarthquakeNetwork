@@ -1,0 +1,25 @@
+{
+ "setting": {
+  "1.0.1": {
+   "Language": {
+    "args": {
+     "Language": "en_GB"
+    }
+   }
+  }
+ },
+ "frontend": {
+  "1.0.0": {
+   "Resolution": {
+    "args": {
+     "Resolution": "466*466"
+    }
+   },
+   "DeviceType": {
+    "args": {
+     "DeviceType": "wearable"
+    }
+   }
+  }
+ }
+}

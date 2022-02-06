@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical"
+    ohos:background_element="#000000"
+>
+
+    <Button
+        ohos:id="$+id:button_menu1"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:background_element="$graphic:red"
+        ohos:text="Check Earthquake info"
+        ohos:text_alignment="center"
+        ohos:text_color="#FFFFFF"
+        ohos:text_size="19fp"
+        ohos:right_padding="5vp"
+        ohos:left_padding="5vp"
+        ohos:multiple_lines="true"
+        ohos:bottom_margin="25vp"
+        ohos:right_margin="15vp"
+        ohos:left_margin="15vp"
+        />
+
+    <Text
+
+        ohos:id="$+id:text_menu"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:background_element="$graphic:blue"
+        ohos:text="you will be notified if there is an earthquake nearby"
+        ohos:text_alignment="center"
+        ohos:text_color="#FFFFFF"
+        ohos:text_size="12fp"
+        ohos:right_padding="5vp"
+        ohos:left_padding="5vp"
+        ohos:multiple_lines="true"
+        ohos:right_margin="15vp"
+        ohos:left_margin="15vp"
+
+        />
+
+
+
+
+
+
+
+</DirectionalLayout>
