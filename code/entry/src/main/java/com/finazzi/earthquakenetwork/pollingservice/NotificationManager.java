@@ -47,6 +47,7 @@ public class NotificationManager
 
     private int getTime() //compute time (in seconds) between earthquake start and the actual time
     {
+        geolocator = Geolocator.getGeolocator(context);
         ZonedDateTime deviceTime = ZonedDateTime.now();
         ZonedDateTime serverTime =  deviceTime.withZoneSameInstant(ZoneId.of("Europe/Rome"));
         LocalDateTime actualTime = serverTime.toLocalDateTime();
