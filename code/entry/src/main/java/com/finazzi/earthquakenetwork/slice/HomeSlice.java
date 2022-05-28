@@ -44,7 +44,12 @@ public class HomeSlice extends AbilitySlice
     public void onActive()
     {
         super.onActive();
-        geolocator = Geolocator.getGeolocator();
+        geolocator = null;
+        try
+        {
+            geolocator = Geolocator.getGeolocator();
+        }
+        catch(Exception e) {geolocator = null;}
 
         double time;
 

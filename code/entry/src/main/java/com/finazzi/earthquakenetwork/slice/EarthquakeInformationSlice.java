@@ -29,7 +29,12 @@ public class EarthquakeInformationSlice extends AbilitySlice
     public void onActive()
     {
         super.onActive();
-        geolocator = Geolocator.getGeolocator();
+        geolocator = null;
+        try
+        {
+            geolocator = Geolocator.getGeolocator();
+        }
+        catch(Exception e) {geolocator = null;}
 
         ZonedDateTime zonedDateTime = geolocator.getLastRelevantEarthquake().getEarthquakeTime().atZone(ZoneId.of("Europe/Rome"));
         LocalDateTime actualTime = zonedDateTime.withZoneSameInstant(ZoneId.systemDefault()).toLocalDateTime();
